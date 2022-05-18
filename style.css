@@ -1,3 +1,8 @@
+body{
+    width: fit-content;
+    margin: auto;
+}
+
 #mainCryptoBox{
     border-radius: 30px;
     background-color: #000;
