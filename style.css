@@ -1,0 +1,28 @@
+#mainCryptoBox{
+    border-radius: 30px;
+    background-color: #000;
+
+    width: fit-content;
+
+    padding: 10px 20px;
+}
+
+.cryptoText,.cryptoSpan{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 5px #FFF;
+}
+
+.cryptoText{
+    color: #FFF;
+}
+
+.cryptoSpan{
+    color: red;
+    display: block;
+    text-align: center;
+}
+
+.boxCrypto{
+    width: fit-content;
+}
