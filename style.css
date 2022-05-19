@@ -1,33 +1,71 @@
 body{
-    width: fit-content;
     margin: auto;
 }
 
 #mainCryptoBox{
-    border-radius: 30px;
     background-color: #000;
 
-    width: fit-content;
+    width: 100%;
+    position: static;
+    top:0px;
+    left:0px;
 
-    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    height: fit-content;
 }
 
 .cryptoText,.cryptoSpan{
-    font-size: 30px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1px 1px 5px #FFF;
+    text-shadow: 1px 1px 5px #FFF
 }
 
 .cryptoText{
     color: #FFF;
+    padding: 10px;
+    margin: auto;
+}
+
+.cryptoText2{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 5px #FFF;
+    margin-top: 30px;
 }
 
 .cryptoSpan{
     color: red;
     display: block;
     text-align: center;
+    display: inline-block;
 }
 
+.btc{color:rgb(255, 217, 0);}
+
+
+
 .boxCrypto{
-    width: fit-content;
+    height: fit-content;
+    animation: move 10s linear infinite;
+}
+
+.boxCrypto::after{
+    content:'';
+
+}
+
+
+@keyframes move{
+    0%{
+        transform: translateX(100vw);
+    }
+
+    100%{
+        transform: translateX(-100vw);
+    }
 }

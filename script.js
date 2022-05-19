@@ -19,4 +19,4 @@ const cryptoPrice = async () => {
 
 cryptoPrice();
 
-setInterval(cryptoPrice, 60000);
+setInterval(cryptoPrice, 60000); 
