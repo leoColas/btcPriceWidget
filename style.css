@@ -1,6 +1,12 @@
 body{
     margin: auto;
+    overflow-x: hidden;
 }
+/* 
+    WARNING : Don't forget "overflow-x: hidden;" in your <body> otherwise you'll get a scrollbar on window's X axis
+
+    If you want switch scroll direction from ' left to right ' to 'right to left', you have to switch instructions in move keyframe animation 
+*/
 
 #mainCryptoBox{
     background-color: #000;
@@ -12,7 +18,7 @@ body{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 
     height: fit-content;
 }
@@ -20,7 +26,6 @@ body{
 .cryptoText,.cryptoSpan{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1px 1px 5px #FFF
 }
 
 .cryptoText{
@@ -29,43 +34,27 @@ body{
     margin: auto;
 }
 
-.cryptoText2{
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 12px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1px 1px 5px #FFF;
-    margin-top: 30px;
-}
-
 .cryptoSpan{
     color: red;
     display: block;
     text-align: center;
+    font-weight: bolder;
     display: inline-block;
 }
 
 .btc{color:rgb(255, 217, 0);}
 
-
-
 .boxCrypto{
     height: fit-content;
-    animation: move 10s linear infinite;
+    animation: move 20s linear infinite;
 }
-
-.boxCrypto::after{
-    content:'';
-
-}
-
 
 @keyframes move{
     0%{
-        transform: translateX(100vw);
-    }
-
-    100%{
         transform: translateX(-100vw);
+    }
+    
+    100%{
+        transform: translateX(100vw);
     }
 }
